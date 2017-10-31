@@ -34,11 +34,11 @@ You need to choose at least one of them (Two or all of them are as well OK).
 
 ### 3. MLP
 
-Finally I add a multi-layer perceptrons (also known as fully-connected network) to make a final decision. It's quite straightforward.
+Finally, I add a multi-layer perceptrons (also known as the fully-connected network) to make a final decision. It's quite straightforward.
 
-## Data set
+## Dataset
 
-There are a training and a test data set. The training data set contains 6 thousand sentences, with a ill portion of 1:5. Test data set contains 6 hundred sentences with a portion of 1:1.
+There are a training and a test dataset. The training dataset contains 6 thousand sentences, with an ill portion of 1:5. Test dataset contains 6 hundred sentences with a portion of 1:1.
 
 The training set is split by me into two parts, the true training set and validation set, with a percentage of 10%.
 
@@ -46,7 +46,7 @@ Because of the severe unbalance of the training set, for each training epoch, I 
 
 ## Metrics
 
-I save these things into log file.
+I save these things into the log file.
 
 * accuracy
 * loss
@@ -56,11 +56,11 @@ I save these things into log file.
 * mean-pred (the mean output of the last mlp layer)
 * pred-pos-ratio (the portion of positive prediction)
 
-With the help of tensorboard, these thing can be beautifully displayed on a chart.
+With the help of tensorboard, these things can be beautifully displayed on a chart.
 
 ## Hyper-parameters searching
 
-With greedy algorithm, I searched some architecture and parameters. What I found are listed following.
+With the greedy algorithm, I searched some architecture and parameters. What I found are listed following.
 
 * Best embedding: word-level embedding only
 * Best middle layer: LSTM
@@ -71,27 +71,27 @@ With greedy algorithm, I searched some architecture and parameters. What I found
 * The sequence length: 60
 * The dimension of LSTM output: 50
 
-The search for proper word-embedding dimension (accuracy and f-measure only):
+Search for a proper word-embedding dimension (accuracy and f-measure only):
 
 ![word-embedding dimension](./pic/word_dim.png)
 
-The search for proper number of words (accuracy and f-measure only):
+Search for a proper number of words (accuracy and f-measure only):
 
 ![number of words](./pic/num_words.png)
 
-The search for proper max seq length (accuracy and f-measure only):
+Search for a proper max seq length (accuracy and f-measure only):
 
 ![max seq length](./pic/seq_len.png)
 
-The search for proper depth of highway net (accuracy and f-measure only):
+Search for a proper depth of highway net (accuracy and f-measure only):
 
 ![depth of highway net](./pic/depth_highway.png)
 
-The search for proper depth of LSTM net (accuracy and f-measure only):
+Search for a proper depth of LSTM net (accuracy and f-measure only):
 
 ![depth of LSTM net](./pic/depth_lstm.png)
 
-The search for proper dimension of LSTM net (accuracy and f-measure only):
+Search for a proper dimension of LSTM net (accuracy and f-measure only):
 
 ![dim of LSTM net](./pic/lstm_dim.png)
 
