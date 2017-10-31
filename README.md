@@ -6,9 +6,9 @@ Given some texts selected from two novels from different authors, train a machin
 
 ## Prerequisites
 
-Python 3.5+
-Tensorflow 1.3+
-Keras 2.0.0+
+* Python 3.5+
+* Tensorflow 1.3+
+* Keras 2.0.0+
 
 ## Architecture
 
