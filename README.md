@@ -36,7 +36,7 @@ You need to choose at least one of them (Two or all of them are as well OK).
 
 Finally I add a multi-layer perceptrons (also known as fully-connected network) to make a final decision. It's quite straightforward.
 
-## data set
+## Data set
 
 There are a training and a test data set. The training data set contains 6 thousand sentences, with a ill portion of 1:5. Test data set contains 6 hundred sentences with a portion of 1:1.
 
@@ -98,7 +98,7 @@ The search for proper dimension of LSTM net (accuracy and f-measure only):
 
 It's absolutely not the best hyper-parameters. Due to my limited time, I didn't try to search for higher accuracy.
 
-Here are my results in test set:
+Here are my results in the test set:
 
 |accuracy | precision| recall|f_measure|
 |-------|-----------|--------|---------|
@@ -108,3 +108,6 @@ Here are my results in test set:
 
 * More fine-grained tuning could be done.
 * Some tricks, like dropout, can be added to it.
+
+Welcome for pull requests!
+
