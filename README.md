@@ -2,7 +2,7 @@
 
 ## Task
 
-Given some texts selected from two novels from different authors, train a machine to classify them.
+Given some texts selected from two novels written by different authors, train a machine to classify them.
 
 ## Prerequisites
 
@@ -12,7 +12,7 @@ Given some texts selected from two novels from different authors, train a machin
 
 ## Architecture
 
-The whole network can be separated into three main part.
+The whole network can be separated into three main parts.
 
 ### 1. Embedding
 
@@ -24,7 +24,7 @@ After normal embedding, a [highway](https://arxiv.org/pdf/1505.00387.pdf) net is
 
 ### 2. LSTM/CNN
 
-After embedding, I add a layer to extract the syntactic/semantic style of the text. I provide with three ways to do this.
+After embedding, I add a layer to extract the syntactic/semantic style of the text. I offer three ways to do this.
 
 * Multi-layer bidirectional [LSTM net](http://www.mitpressjournals.org/doi/abs/10.1162/neco.1997.9.8.1735)
 * [CNN + Max-pooling](https://www.researchgate.net/profile/Yann_Lecun/publication/2453996_Convolutional_Networks_for_Images_Speech_and_Time-Series/links/0deec519dfa2325502000000.pdf)
@@ -34,7 +34,7 @@ You need to choose at least one of them (Two or all of them are as well OK).
 
 ### 3. MLP
 
-Finally, I add a multi-layer perceptrons (also known as the fully-connected network) to make a final decision. It's quite straightforward.
+Finally, I add a multi-layer perceptron (also known as the fully-connected network) to make a final decision. It's quite straightforward.
 
 ## Dataset
 
